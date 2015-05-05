@@ -56,13 +56,6 @@ int main(int argc, char *argv[])
     {
         Info<< "Time = " << runTime.timeName() << nl << endl;
 
-		//Magnetostatics calculation - dropped in favor of just reading in the yield stress
-	/*	{
-			solve ( fvm::laplacian(magPot) + magCharge );
-
-			Hfield = -fvc::grad(magPot);
-			Hfield.correctBoundaryConditions();
-		}*/
 
         // --- Pressure-velocity SIMPLE corrector
         {
