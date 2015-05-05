@@ -1,0 +1,3 @@
+magnetoSimpleFoam.C
+
+EXE = $(FOAM_APPBIN)/magnetoSimpleFoam
