@@ -1,0 +1,3 @@
+easyMBexp/easyMBexp.C
+
+LIB = $(FOAM_USER_LIBBIN)/libSteve

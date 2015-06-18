@@ -54,7 +54,7 @@ Foam::viscosityModels::easyMBexp::calcNu() const
 	const volScalarField& tau_y_field = 
 		U_.mesh().lookupObject<volScalarField>("tau_y_field");
 
-	return min(visc_pre, visc_po_ + tau_y_field *
+	return min(visc_pre_, visc_po_ + tau_y_field *
 		(1 - exp(
 				 sr*(visc_po_ - visc_pre_)/max
 				 		(
