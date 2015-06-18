@@ -1,7 +1,2 @@
 *.dep
-<<<<<<< HEAD
-lnInclude
 *linux*
-=======
-Make/linu*
->>>>>>> d583fb208c7ad0659758cce9a35d64e46f86685e
