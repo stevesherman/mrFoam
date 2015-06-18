@@ -1,0 +1,22 @@
+#!/bin/sh
+
+. $WM_PROJECT_DIR/bin/tools/RunFunctions
+
+foamCleanTutorials
+rm -r logs
+m4 constant/polyMesh/blockMeshDict.m4 > constant/polyMesh/blockMeshDict
+
+blockMesh
+#cp 0/tau_y_field.bak 0/tau_y_field
+#setFields
+
+topoSet
+setsToZones -noFlipMap
+#
+#decomposePar
+magnetoSimpleFoam > log.magnetoSimpleFoam
+wallShearStress -latestTime
+sample -latestTime
+#runApplication reconstructPar
+foamLog log.magnetoSimpleFoam
+# ---------------
