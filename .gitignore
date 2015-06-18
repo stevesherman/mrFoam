@@ -2,3 +2,6 @@
 *linux*
 *lnInclude*
 **/polyMesh/boundary
+**/constant/**
+**/log.*
+**/postProcessing/**

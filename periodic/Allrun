@@ -14,7 +14,7 @@ topoSet
 setsToZones -noFlipMap
 #
 #decomposePar
-magnetoSimpleFoam > log.magnetoSimpleFoam
+mrFoam > log.mrFoam
 wallShearStress -latestTime
 sample -latestTime
 #runApplication reconstructPar

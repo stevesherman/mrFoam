@@ -17,7 +17,7 @@ FoamFile
 
 #include "../system/initialConditions"
 
-transportModel easyMB;
+transportModel easyMBexp;
 //transportModel Newtonian;
 
 nu 					nu [ 0 2 -1 0 0 0 0 ] $nu_po;
@@ -29,7 +29,7 @@ magnetoBinghamCoeffs
 	Hsat 		      Hsat [ 0 -1 0 0 0 1 0 ] 2e5;
 }
 
-easyMBCoeffs
+easyMBexpCoeffs
 {
 	visc_po        visc_po [ 0 2 -1 0 0 0 0 ] $nu_po ;
 	visc_pre      visc_pre [ 0 2 -1 0 0 0 0 ] $nu_pre ;
