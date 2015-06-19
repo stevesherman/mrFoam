@@ -15,8 +15,8 @@ setsToZones -noFlipMap
 #
 #decomposePar
 mrFoam > log.mrFoam
-wallShearStress -latestTime
+#wallShearStress -latestTime
 sample -latestTime
 #runApplication reconstructPar
-foamLog log.magnetoSimpleFoam
+foamLog log.mrFoam
 # ---------------
