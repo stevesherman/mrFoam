@@ -1,4 +1,7 @@
 easyMBexp/easyMBexp.C
 easyMB/easyMB.C
+nnLamTurb/laminarDev/laminarDev.C
+nnLamTurb/laminarDev2/laminarDev2.C
+nnLamTurb/laminarNN/laminarNN.C
 
 LIB = $(FOAM_USER_LIBBIN)/libSteve
