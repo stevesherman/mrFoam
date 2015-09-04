@@ -4,8 +4,8 @@
     tmp<fvVectorMatrix> UEqn
     (
         fvm::div(phi, U)
-	  - fvm::laplacian(fluid.nu(), U)
-	  - (fvc::grad(U) & fvc::grad(fluid.nu()))
+	  - fvm::laplacian(turbulence->nuEff(), U)
+	  - (fvc::grad(U) & fvc::grad(turbulence->nuEff()))
       ==
         fvOptions(U)
     );
